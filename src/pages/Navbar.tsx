@@ -56,7 +56,7 @@ export default function Navbar() {
 
           {/* GitHub butonu */}
           <a
-            href="https://github.com/sleepwhy" // GitHub linkini kendi kullanıcı adınla değiştir
+            href="https://github.com/talhaceliktas" // GitHub linkini kendi kullanıcı adınla değiştir
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-cyan-400 hover:text-cyan-600 transition"

@@ -42,7 +42,7 @@ export default function Contact() {
 
   const links = [
     { href: "mailto:celiktas.talha@icloud.com", Icon: Mail, label: "Email" },
-    { href: "https://github.com/sleepwhy", Icon: Github, label: "GitHub" },
+    { href: "https://github.com/talhaceliktas", Icon: Github, label: "GitHub" },
     { href: "https://www.instagram.com/sl3epwy/", Icon: Instagram, label: "Instagram" },
     { href: "https://www.upwork.com/freelancers/~015b596fc5d6c9a1ff", Icon: Briefcase, label: "Upwork" },
     { href: "https://www.linkedin.com/in/talhaceliktas/", Icon: Linkedin, label: "Linkedin" },

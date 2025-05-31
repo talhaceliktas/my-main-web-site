@@ -34,7 +34,7 @@ Prerequisites
 Steps
 
 1. Clone the repository:
-   git clone https://github.com/sleepwhy/my-main-web-site.git
+   git clone https://github.com/talhaceliktas/my-main-web-site.git
    cd my-main-web-site
 
 2. Install dependencies:
@@ -78,7 +78,7 @@ Technologies Used
 Author
 
 Talha Celiktas
-GitHub Profile: https://github.com/sleepwhy
+GitHub Profile: https://github.com/talhaceliktas
 
 LinkedIn Profile: https://www.linkedin.com/in/talhaceliktas/
 
