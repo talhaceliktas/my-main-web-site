@@ -1,54 +1,93 @@
-# React + TypeScript + Vite
+# My Portfolio App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React, TypeScript, GSAP, and other modern web technologies.
 
-Currently, two official plugins are available:
+[![React 19.1.0](https://img.shields.io/badge/React-19.1.0-blue?logo=react&logoColor=white)](https://reactjs.org/)  [![TypeScript 5.8.3](https://img.shields.io/badge/TypeScript-5.8.3-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  [![GSAP 3.13.0](https://img.shields.io/badge/GSAP-3.13.0-green?logo=greensock&logoColor=white)](https://greensock.com/gsap/)  [![Vite 6.3.5](https://img.shields.io/badge/Vite-6.3.5-purple?logo=vite&logoColor=white)](https://vitejs.dev/)  [![Tailwind CSS 3.4.17](https://img.shields.io/badge/Tailwind_CSS-3.4.17-blue?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+About
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Hi, I'm Talha Celiktas — a software developer focused on building efficient, scalable, and elegant solutions.
+This project is my personal portfolio website showcasing my skills, projects, and contact information.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Smooth animations using GSAP
+- Responsive and modern UI with Tailwind CSS
+- Built with React + TypeScript for type safety and scalability
+- Interactive icons from lucide-react and react-icons
+- Scroll effects with react-scroll
+
+---
+
+Installation
+
+Prerequisites
+
+- Node.js (v16 or higher recommended)
+- npm or yarn package manager
+
+Steps
+
+1. Clone the repository:
+   git clone https://github.com/sleepwhy/my-main-web-site.git
+   cd my-main-web-site
+
+2. Install dependencies:
+   npm install
+   # or
+   yarn install
+
+3. Run the development server:
+   npm run dev
+   # or
+   yarn dev
+
+4. Open your browser and visit:
+   http://localhost:5173
+
+---
+
+Available Scripts
+
+Command           - Description
+npm run dev       - Start the development server
+npm run build     - Build the app for production
+npm run preview   - Preview the production build
+npm run lint      - Run ESLint checks
+npm run watch     - Watch Tailwind CSS and rebuild
+
+---
+
+Technologies Used
+
+- React 19.1.0 — UI library
+- TypeScript 5.8.3 — Typed JavaScript superset
+- GSAP 3.13.0 — For smooth animations
+- Vite 6.3.5 — Fast build tool & dev server
+- Tailwind CSS 3.4.17 — Utility-first CSS framework
+- Lucide React & React Icons — Icon libraries
+- React Scroll — Smooth scroll navigation
+
+---
+
+Author
+
+Talha Celiktas
+GitHub Profile: https://github.com/sleepwhy
+
+LinkedIn Profile: https://www.linkedin.com/in/talhaceliktas/
+
+Website: https://www.talhaceliktas.com
+
+---
+
+License
+
+MIT
+
+

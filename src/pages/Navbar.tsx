@@ -89,7 +89,7 @@ export default function Navbar() {
         <ScrollLink href="#contact" label="Contact" onClick={() => { handleScrollTo("contact"); setMenuOpen(false) }} />
         {/* Mobilde istersen CV ve GitHub linklerini de ekleyebilirsin */}
         <a
-          href="/cv.pdf"
+          href="/TalhaCeliktasCV.pdf"
           download
           className="text-cyan-400 hover:text-cyan-600"
           onClick={() => setMenuOpen(false)}

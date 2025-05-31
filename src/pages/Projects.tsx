@@ -62,7 +62,11 @@ export default function Projects() {
   }, [])
 
   return (
-    <section className="bg-neutral-950 text-white min-h-screen py-24 px-6" id='projects'>
+    <section
+      style={{ backgroundColor: 'rgba(15, 23, 42, 0.3)' }} // örnek koyu saydam renk
+      className="text-white min-h-screen py-24 px-6"
+      id="projects"
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 tracking-tight text-gray-100">
           My Projects
