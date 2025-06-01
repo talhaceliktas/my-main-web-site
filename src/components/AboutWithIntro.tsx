@@ -14,6 +14,11 @@ export default function AboutWithIntro() {
 
   useEffect(() => {
     if (!introRef.current) return
+
+    // Basit mobil kontrolü
+    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent)
+    if (isMobile) return // Mobilde efekt uygulanmasın
+
     const spans = introRef.current.querySelectorAll('span')
 
     gsap.set(spans, {

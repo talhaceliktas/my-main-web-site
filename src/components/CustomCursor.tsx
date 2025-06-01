@@ -3,22 +3,29 @@ import { useEffect, useState } from 'react'
 export default function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const [hovered, setHovered] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
+    const isTouchDevice =
+      typeof window !== 'undefined' &&
+      ('ontouchstart' in window || navigator.maxTouchPoints > 0)
+
+    setIsMobile(isTouchDevice)
+
+    if (isTouchDevice) return
+
     const moveCursor = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY })
     }
+
     const onMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement
-      if (target.closest('a, button')) {
-        setHovered(true)
-      }
+      if (target.closest('a, button')) setHovered(true)
     }
+
     const onMouseOut = (e: MouseEvent) => {
       const target = e.target as HTMLElement
-      if (target.closest('a, button')) {
-        setHovered(false)
-      }
+      if (target.closest('a, button')) setHovered(false)
     }
 
     window.addEventListener('mousemove', moveCursor)
@@ -31,6 +38,8 @@ export default function CustomCursor() {
       window.removeEventListener('mouseout', onMouseOut)
     }
   }, [])
+
+  if (isMobile) return null // Mobilde hiç render etme
 
   const size = hovered ? 40 : 20
   const bgColor = hovered ? 'rgba(255, 255, 255, 0.9)' : 'transparent'
@@ -49,7 +58,8 @@ export default function CustomCursor() {
         border: border,
         pointerEvents: 'none',
         transform: 'translate(-50%, -50%)',
-        transition: 'width 0.1s ease, height 0.1s ease, background-color 0.1s ease, border 0.1s ease',
+        transition:
+          'width 0.1s ease, height 0.1s ease, background-color 0.1s ease, border 0.1s ease',
         zIndex: 9999,
         mixBlendMode: 'difference',
         backdropFilter: hovered ? 'blur(4px)' : 'none',
