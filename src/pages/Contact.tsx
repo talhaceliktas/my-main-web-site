@@ -51,7 +51,7 @@ export default function Contact() {
   return (
     <section className=" text-white py-20 px-8 relative" id="contact">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-5xl font-bold mb-12 text-white relative z-10">Contact Me</h2>
+        <h2 className="text-5xl font-bold mb-12 text-white relative">Contact Me</h2>
 
         <p className="text-lg text-gray-300 mb-10">
           Let's build something together. Feel free to reach out on any platform!
